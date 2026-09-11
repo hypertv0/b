@@ -162,11 +162,13 @@ def page_meta(url):
     if m:
         logo = m.group(1).split("?")[0]
     clock = ""
-    m = re.search(r'"dateStr":"[^"]*?(\d{2}:\d{2})"', html)
+    m = re.search(r'dateStr\\?":\\?"([^"\\]+)\\?"', html)
     if m:
-        clock = m.group(1)
-    else:
-        m = re.search(r'"kickoffIso":"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2})', html)
+        t = re.search(r"(\d{2}:\d{2})", m.group(1))
+        if t:
+            clock = t.group(1)
+    if not clock:
+        m = re.search(r'kickoffIso\\?":\\?"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2})', html)
         if m:
             try:
                 from datetime import datetime, timedelta
@@ -174,7 +176,7 @@ def page_meta(url):
                 clock = dt.strftime("%H:%M")
             except Exception:
                 pass
-        elif '"isLive":true' in html:
+        elif '"isLive":true' in html or '\\"isLive\\":true' in html:
             clock = "CANLI"
     return title, logo, clock
 
