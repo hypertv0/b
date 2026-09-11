@@ -55,6 +55,22 @@ def first_working(urls):
     return None
 
 
+def bumped_hosts(url):
+    """beyazelma78.com -> 79, 80, ...: adres değişmişse sayıyı artırarak günceli bulur."""
+    try:
+        parts = urllib.parse.urlsplit(url)
+        m = re.search(r"^(.*?)(\d+)((?:\.[a-z]+)+)$", parts.hostname, re.I)
+        if not m:
+            return []
+        pre, num, suf = m.group(1), int(m.group(2)), m.group(3)
+        out = []
+        for n in list(range(num + 1, num + 31)) + list(range(num - 1, max(0, num - 6), -1)):
+            out.append(urllib.parse.urlunsplit((parts.scheme, "%s%d%s" % (pre, n, suf), parts.path or "/", "", "")))
+        return out
+    except Exception:
+        return []
+
+
 def resolve_origins():
     try:
         sources = json.loads(http(DOMAINS_URL, timeout=15))["sources"]
@@ -68,7 +84,18 @@ def resolve_origins():
         cands = list(src.get("candidates", [])) + list(src.get("gateways", []))
         if key in FALLBACK:
             cands.append(FALLBACK[key])
-        return key, first_working(cands)
+        hit = first_working(cands)
+        if hit:
+            return key, hit
+        # yedek: listedeki ilk adresin sayısını artır/azaltarak günceli ara
+        for c in cands:
+            if c and c.startswith("http") and "bit.ly" not in c:
+                hit = first_working(bumped_hosts(c))
+                if hit:
+                    print("numara-artirimla bulundu:", key, "->", hit)
+                    return key, hit
+                break
+        return key, None
 
     with cf.ThreadPoolExecutor(max_workers=8) as ex:
         for key, url in ex.map(pick, FAMILY):
@@ -120,16 +147,36 @@ def list_links(origin, page, prefix):
     return [(origin + p, p[len(prefix):]) for p in paths]
 
 
-def page_logo(url):
-    """Kanal/mac sayfasindaki site logosu (og:image). Yoksa bos doner."""
+def page_meta(url):
+    """Sayfanın gerçek başlığı, logosu ve (varsa) maç saati. Tek istekte hepsi."""
     try:
         html = http(url, timeout=10)
-        m = re.search(r'og:image"? content="?([^" >]+)', html)
-        if m:
-            return m.group(1).split("?")[0]
     except Exception:
-        pass
-    return ""
+        return "", "", ""
+    title = ""
+    m = re.search(r"<title>(.+?)</title>", html)
+    if m:
+        title = re.sub(r"\s*(Canlı Yayın|Canlı Maç İzle)\s*\|\s*BeyazElma\s*$", "", m.group(1)).strip(" -")
+    logo = ""
+    m = re.search(r'og:image"? content="?([^" >]+)', html)
+    if m:
+        logo = m.group(1).split("?")[0]
+    clock = ""
+    m = re.search(r'"dateStr":"[^"]*?(\d{2}:\d{2})"', html)
+    if m:
+        clock = m.group(1)
+    else:
+        m = re.search(r'"kickoffIso":"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2})', html)
+        if m:
+            try:
+                from datetime import datetime, timedelta
+                dt = datetime.strptime(m.group(1), "%Y-%m-%dT%H:%M") + timedelta(hours=3)
+                clock = dt.strftime("%H:%M")
+            except Exception:
+                pass
+        elif '"isLive":true' in html:
+            clock = "CANLI"
+    return title, logo, clock
 
 
 def b64url(s):
@@ -281,22 +328,25 @@ def main():
 
     def collect(origin, page, prefix, group, is_channel):
         links = list_links(origin, page, prefix)
-        # site logolarini paralel cek
-        logos = {}
+        # gerçek isim + logo + saat için sayfaları paralel çek
+        metas = {}
         with cf.ThreadPoolExecutor(max_workers=8) as ex:
-            fut = {ex.submit(page_logo, url): url for url, _ in links}
+            fut = {ex.submit(page_meta, url): (url, slug) for url, slug in links}
             for f in cf.as_completed(fut):
                 try:
-                    logos[fut[f]] = f.result()
+                    metas[fut[f]] = f.result()
                 except Exception:
-                    logos[fut[f]] = ""
+                    metas[fut[f]] = ("", "", "")
         for url, slug in links:
-            title = slug_title(slug, keep_numbers=is_channel)
+            ptitle, plogo, clock = metas.get((url, slug), ("", "", ""))
+            title = ptitle or slug_title(slug, keep_numbers=is_channel)
+            if clock and not is_channel:
+                title = "%s (%s)" % (title, clock)
             key = (group, title.lower())
             if key in seen:
                 continue
             seen.add(key)
-            logo = logos.get(url) or (tr_logo(title) if is_channel else "") or favicon(origin)
+            logo = plogo or (tr_logo(title) if is_channel else "") or favicon(origin)
             yield url, slug, title, logo, group
 
     jobs = []
