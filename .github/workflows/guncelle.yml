@@ -1,0 +1,25 @@
+name: listeyi-guncelle
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: liste
+  cancel-in-progress: true
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 resolve.py
+      - run: |
+          git config user.name "liste-bot"
+          git config user.email "liste-bot@users.noreply.github.com"
+          git add liste.m3u kanallar/
+          git diff --cached --quiet && echo "degisiklik yok" || (git commit -m "otomatik guncelleme" && git push)
