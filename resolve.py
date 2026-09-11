@@ -7,7 +7,6 @@ import concurrent.futures as cf
 import json
 import os
 import re
-import unicodedata
 import urllib.parse
 import urllib.request
 
@@ -79,8 +78,8 @@ def resolve_origins():
     return out
 
 
-def slug_title(slug):
-    s = re.sub(r"-\d+$", "", slug)
+def slug_title(slug, keep_numbers=False):
+    s = slug if keep_numbers else re.sub(r"-\d{10,}$", "", slug)
     words = []
     for w in s.split("-"):
         if not w:
@@ -92,6 +91,8 @@ def slug_title(slug):
             words.append(lw.upper())
         elif w.isdigit():
             words.append(w)
+        elif lw in ("tv", "ufc", "atv", "dazn", "tv8"):
+            words.append(lw.upper())
         else:
             words.append(w[0].upper() + w[1:])
     return " ".join(words)
@@ -116,7 +117,19 @@ def list_links(origin, page, prefix):
         print("liste alinamadi:", origin + "/" + page, e)
         return []
     paths = list(dict.fromkeys(re.findall(r'href=\\?"(' + prefix + r'[a-z0-9\-]+)\\?"', html)))
-    return [(origin + p, slug_title(p[len(prefix):])) for p in paths]
+    return [(origin + p, p[len(prefix):]) for p in paths]
+
+
+def page_logo(url):
+    """Kanal/mac sayfasindaki site logosu (og:image). Yoksa bos doner."""
+    try:
+        html = http(url, timeout=10)
+        m = re.search(r'og:image"? content="?([^" >]+)', html)
+        if m:
+            return m.group(1).split("?")[0]
+    except Exception:
+        pass
+    return ""
 
 
 def b64url(s):
@@ -172,6 +185,8 @@ def kpores(embed_html, unpacked, embed_url):
 
 
 def cdnlive(html, page_url):
+    if "atob(" not in html:
+        return None
     try:
         dec = re.search(r'function\s+(\w+)\(\w+\)[^}]*atob', html).group(1)
         cm = re.search(r'var\s+(\w+)=((?:' + dec + r'\(\w+\)\+)+' + dec + r'\(\w+\))', html)
@@ -257,12 +272,6 @@ def resolve_page(page_url):
     return None
 
 
-def slugify(name):
-    n = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
-    n = re.sub(r"[^a-zA-Z0-9]+", "-", n.lower()).strip("-")
-    return n or "kanal"
-
-
 def main():
     origins = resolve_origins()
     if not origins:
@@ -270,14 +279,25 @@ def main():
         return
     matches, channels, seen = [], [], set()
 
-    def collect(origin, page, prefix, group, use_tr_logo):
-        for url, title in list_links(origin, page, prefix):
+    def collect(origin, page, prefix, group, is_channel):
+        links = list_links(origin, page, prefix)
+        # site logolarini paralel cek
+        logos = {}
+        with cf.ThreadPoolExecutor(max_workers=8) as ex:
+            fut = {ex.submit(page_logo, url): url for url, _ in links}
+            for f in cf.as_completed(fut):
+                try:
+                    logos[fut[f]] = f.result()
+                except Exception:
+                    logos[fut[f]] = ""
+        for url, slug in links:
+            title = slug_title(slug, keep_numbers=is_channel)
             key = (group, title.lower())
             if key in seen:
                 continue
             seen.add(key)
-            logo = tr_logo(title) if use_tr_logo else ""
-            yield url, title, logo or favicon(origin), group
+            logo = logos.get(url) or (tr_logo(title) if is_channel else "") or favicon(origin)
+            yield url, slug, title, logo, group
 
     jobs = []
     for key in FAMILY:
@@ -290,21 +310,21 @@ def main():
 
     results = []
     with cf.ThreadPoolExecutor(max_workers=8) as ex:
-        fut = {ex.submit(resolve_page, url): (url, title, logo, group) for url, title, logo, group in jobs}
+        fut = {ex.submit(resolve_page, url): (url, slug, title, logo, group) for url, slug, title, logo, group in jobs}
         for f in cf.as_completed(fut):
-            url, title, logo, group = fut[f]
+            url, slug, title, logo, group = fut[f]
             try:
                 r = f.result()
             except Exception as e:
                 print("cozum exc:", title, e)
                 r = None
             if r:
-                results.append((group, title, logo, r))
+                results.append((group, slug, title, logo, r))
                 print("OK:", group, "-", title)
             else:
                 print("BOŞ:", group, "-", title)
 
-    results.sort(key=lambda x: (x[0] != "Canlı Maçlar", x[1].lower()))
+    results.sort(key=lambda x: (x[0] != "Canlı Maçlar", x[2].lower()))
     kd = os.path.join(OUT_DIR, "kanallar")
     os.makedirs(kd, exist_ok=True)
     for f in os.listdir(kd):  # ölü dosyaları temizle
@@ -312,15 +332,19 @@ def main():
             os.remove(os.path.join(kd, f))
 
     lines = ["#EXTM3U", "# ElmaSpor otomatik liste"]
-    for group, title, logo, (stream, ref, org) in results:
+    for group, slug, title, logo, (stream, ref, org) in results:
         lines.append('#EXTINF:-1 tvg-logo="%s" group-title="%s",%s' % (logo, group, title))
         lines.append("#EXTVLCOPT:http-user-agent=" + UA)
         if ref:
             lines.append("#EXTVLCOPT:http-referrer=" + ref)
         lines.append(stream)
         if group == "Spor Kanalları":
-            with open(os.path.join(kd, slugify(title) + ".m3u8"), "w") as fh:
-                fh.write("#EXTM3U\n#EXTINF:-1,%s\n%s\n" % (title, stream))
+            with open(os.path.join(kd, slug + ".m3u8"), "w") as fh:
+                fh.write("#EXTM3U\n#EXTINF:-1 tvg-logo=\"%s\",%s\n" % (logo, title))
+                fh.write("#EXTVLCOPT:http-user-agent=" + UA + "\n")
+                if ref:
+                    fh.write("#EXTVLCOPT:http-referrer=" + ref + "\n")
+                fh.write(stream + "\n")
     with open(os.path.join(OUT_DIR, "liste.m3u"), "w") as fh:
         fh.write("\n".join(lines) + "\n")
     print("YAZILDI: %d yayin" % len(results))
