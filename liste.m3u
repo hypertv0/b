@@ -1,6 +1,106 @@
 #EXTM3U
 # ElmaSpor otomatik liste
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/logos/med/leagues/ufc.png" group-title="Canlı Maçlar",Dana Whites Contender Series season 10 Week 7 - UFC (03:00)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=tq9Vh2c1I_ul_iMKWScYZJkERXYjz_0Onnib2q6OWRw3K-9yvYI94foYgWKcZ54Dc6Xs9sZJTbsNh2yjbwlQYPzTpvNOheLGvStEhlL3W-t01V8
+https://tr.kpores.ru/live.php?id=ddd8d25891854deb&token=guest__0153tb0l33rvfIz6XVtQlAK1QEM7a-5tGepbuxTks1Fl39pCG8h8hK3MgY6B0kH0go4T7ig7F6bkJVV39PfsdkVB5Ra92GAQiv6u1ToQRlnsqGJgHaESEyRMIJA7H3lra_zLrUlDHLFxsKsbUGEmZx2JYOjRzv8aG3QIa-tt7ZeWjct0J2YoWdYHANulmbVMOq8QwAPXfsNHq1lYfj70fvXSkt2TXBsDMyzl6sAYpcOgRMF-hpUcCyexM6mJCzPcqjCd&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/a-spor-hd.png" group-title="Spor Kanalları",A SPOR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=erOIKIfbyKsue00SiZLmbqzZO2Vy3lGAak2kV4jgXeiH2x11prO8yv2b46X5_e_qayOiaDnhVzs14hra4cbhZ_6zgRFrMW0Mn8IatDXjgP9HsP4
+https://tr.kpores.ru/live.php?id=577e47f5c219e79a&token=guest__2ed88QwjtNJ_sst3VQkCOEEWfS7PCPt6WCDfr8SciyYUOwsAlBgAzsSYEQdhSXHvebMZoSZ2Niggkz0o3K0M36NA7cXARcX0bQFgpMppXFhjL1f2nvJI90IqJwAfnVpxOIZjIc9TniwOjkxMC9hIMbyYBQkN64LR8zwb3_M69QG3qOSMr7-svhhRYdnRu6s6j7WQ4Jv_HHLm9hgyZiIPLYvmKYFTmqfY6v0RfMmmDaksQ55sSLTcymgn7fuIr5ASsjM1&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/atv-hd.png" group-title="Spor Kanalları",ATV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=G5aFrX7nAVjMeOKAvgfU_9NavDTxBnIJSSOQ_yw_IzW8N6u8AW7qh_7EtqrmyLTOx6fORNU4hepStY54survy2yG9JTwdubNC3HqfAwi_bW4pP4
+https://tr.kpores.ru/live.php?id=916e2b3e105e7812&token=guest__6ed7XPzMy5SySpJssGFlx2jA4lMmyX8qHwOIPoxoEiB3PtzwFAAbhvG_VlimQXRViORnwCC7fV_7IDbcwxiWqrXKYuZpr5TOPBqHY7CmSE9n61EUaFAJ5VmrwophyRJxss5WaENgn8pDEBl0Xjasuo-LRR8X92WCSo7vfUtCuDm2gkMst1VWQLAG4RHf2W1GreRGfeOh-ycUSAkCfroxQSnNcvNIWGwiE7IHy65a2W-L3NBjIlQH38l86oNjYLFdOM9f&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/bein-connect-1-3a253bbd10.png" group-title="Spor Kanalları",Bein Connect 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=w-mLcFPE5O3Ar_qnGghv_EC0OoVhe9PKuo1dLoWOUkCyLx_cGpj6WwftiMjMv5DGLSaqFmk3xUzXVFnL9Ag9rbDiC1E0hy9-yqm0SLRtYUzYVYY
+https://tr.kpores.ru/live.php?id=63f454a170fa8c38&token=guest__0398QWDyN8xiiw-xQm3MJaQBKfXdpKPJtqlSjqfYHhbTzuryUxZr9c9fU4ULyCJJWmWzgY3XlMmfsDB-g3lMcyr2rjxGsSCONqZUfjuFcjNecWDIjTPsvgqSo_k70rUEmJYM1wsLWWudWndFqADLIzrY85NbIGi8BSXJA1oOl_zD7ZmTBrL4z2eflOxrQKbZ5ArOJmwYLmaskbiM2_qPRF1ej4woVkPU3XlzZ6Khz-9iUUXD9Plbsj4iWNni5yq-eytJ&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/bein-sports-5-hd-7fd6f7a3dc.png" group-title="Spor Kanalları",Bein Sports 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=2oFLYpPCtplMjPK6JySHQ7_NRUdATb0Uc8Med_SpDQ3WF7HnMbe19OeMoPSkYa9l436rKO7ieRhxS3UgKulaaho0Irl_PjKKibgR_4mHIHPEeuw
+https://tr.kpores.ru/live.php?id=b5cd05a669819f17&token=guest__9086ukR9GnE_YjCgDIh48fjD47dHgLrys4vX4ZJaT3reI_MHrWGfHizm3Mt3_I472P5lt3keQ_JI1JsRD9ffgphtC_U3rbLfkFt4otIZcoYrtm7EOCt2OduOLkFDO518fuWYwMMHyBQW6GthdunqE7gxRV_rNtVma7mJ_3oFbT7E1TJdSzaeAOd2sZhY5asxX-0WMazj4eXI-oi7AWkHoy1P0oS20WzW-5bjg_qNsC_UDTJ7lD87rDSn10sRhlvsWijN&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/bein-sports-max-2-hd-e436a0ab22.png" group-title="Spor Kanalları",Bein Sports MAX 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=GkM56XZ5TkxIZzeXuygDAYXZXbFvZlgeOIRFauYfnRcGmTgIVJrF1hFcmnO_le4zLUzEmdekK31KcTxSw_V91ZbQgKsn0-v-QeQifCZOgNENpYE
+https://tr.kpores.ru/live.php?id=ec5f207d40a9353b&token=guest__d1dceeNeJpH3xXOfENlR2yNDb7mGPItKdtHz4-lZIPAKarMkPuPfKWiuAEdeBJJD_o6FgO4Y421962NvnXf7J6RlT6zsqnub74ImnboW4EXG8M_n8wYBo9TRvNodvc0BESIxLeGW0Bkfvl3D-deCdpgiUEHZpUYx2wSx4KNw6QzhxoP05n2C4AmbWCGYdN5Jb11GvkxPW1dRQi57B3KoTzlXc8tZ4o-FKQIpcODv7h-FbutzwpQvxScXZ2xJxdU5HNKK&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/exxen-spor-hd.png" group-title="Spor Kanalları",EXXEN SPOR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=DK0iSNUjnURk6xPDHbgzKkTvE5DfIhnpZArAlhEQ5xbM_s1kzwU_MTvUSPk-flst-RRMsUIDxT57n7RtTmAvtuF7gnSxdPzVsvicAfbmPjQ7PKw
+https://tr.kpores.ru/live.php?id=9cdc6ccacc46cb0b&token=guest__6e10FUcqHjIzQb_6u-MyJ3wXf15vfWo2NDN8dFpUyVK68uSap-ksj2zoLiMVuNwNrTrEWbMha_IqUdNQVSgNHA-FJUfif1fdYr963tuubWHkU8EaEFzpNd3v137O9xntm7r0x1pC-LnfOHb8eFTBObauIHjfCN439ZaahqNJBjxemkE1l1uoT5opFfitQG4KXHNe2NhKOOwMtfQ5kT-_lLUsmRZ8233x3W9DCfCeDrl8ddEhIMoO_RC98pzTD2q7Xjvy&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/exxen-spor-hd.png" group-title="Spor Kanalları",EXXEN SPOR 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=VsaXCaqHE2HJNvw2eb79IUSFBdfzGMZCExVrUeP0IzAj79rSzZXVbNldwKU0Fb-KUbgLuWbT8qRuDXoH_fKrImmleDuZe5cypSnozE1Lj3P1ZOQ
+https://tr.kpores.ru/live.php?id=71f1d6c6175a4737&token=guest__14e5aGya7PZeSJfUdxNrJxWqK_E9lzNFTIx4iicPpJpGn_xLG2LyWlrbIA5NgmmStTQCJYQ3UPR-tGBr-RlZHvltXiVgVbt49dDb7DzRh6VOAFtC7IW8jdXwqgms2H47hT4iQc0-dpln1Bg8VKZZvqsKgiuUbpXZ48EMIzZs333ysSli_449qRcuYcw-R2D29rwhy6QtSXgfO4DUfZ4xUalkMca2bXjsTy2OrPpciq-jAH8LYFj0xLrk1UakoXeQNzLu&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/s-sport-1-hd.png" group-title="Spor Kanalları",S SPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=Rl057tB3GoBUf5YaDaHjYErsYJVfIbj8m3d8oGW8cunPf6Nd-97A6g29jDaKft2qd39m0wsrhDtZcg7WMf-DJxp5a4Vo0JbiG0x_ddSGo321ne0
+https://tr.kpores.ru/live.php?id=a8ac9baa1ccfc0a6&token=guest__94e1ZqylZOAG5w6F1X_OV2TuTJqb5o_cyM_ueMMsjv_PVihyc1cwWUOZGkDNzm102A9Ig4DSsdCrli0oMm5DUicef2q_UZ22FsCuH2MwNXV2aO0XOU86bQW0mY6Cfi1K9OJuf6J_SsXPzClRnhfo3rLkfBqqVdR7WIV8qf29NQbyp3QP1y-JoNTehUyiGsq-9FOqVuzuoP5jwF2C3XUAFF92GsNlMSqCGfsZtbCIpTeQX54hFsGaEQ5ZHULO7HltryCQ&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/s-sport-2-hd.png" group-title="Spor Kanalları",S SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=tdKNpQV5TcTQi4yBSnMlAF_nD5atddxQ-8-lidKkb7YtDVC1FiRyKpbsRfELPPcrvewgywIiSqYnINZKYaJjhqdAZPFXFQkha5ybNvtnNQs9J0E
+https://tr.kpores.ru/live.php?id=d24f97249b14adca&token=guest__2a80UhYmBxmEk6EpokCqkJ4Y8loIcrzPrW_UZZHms7M6yqoCGMNXB6gLyTvHZDdad8fPiV596KUmjJ2tUIEaufCKxbQly0lXUOBxq7QaPemK_6EzGvAo7L2cMfzDEGREF6EQ6pdonN_hsQDPQaEAB7xERinPuamE2UduwuiGTUeA_J29Rh4jbu5UssTmFQ9OhwOz0fAPqsAfRs_AFyP-FkUldKV6N85fwXDL_bRoxa14SxnWDxKHKgDn1GO4v6qc0_kl&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/s-sport.png" group-title="Spor Kanalları",S SPORT+
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=ovOeDYnyydXBCIGXlrExjVr9EUIqM3ZyaOqdXuWnZzrr3EZ40ZV4qyvVKgf_fD-YrHFxYGSSvxj0OzTWVguE9S28JYeqMe0V_gNTJ8rP_OqAGqs
+https://tr.kpores.ru/live.php?id=43fb7b794da4c40c&token=guest__99deOrUDvzWZLuOvkxNoZwDIB-C6wy_ecTGGeYzDCYEb7AC2o9n5i8OIVcs-ueKBmhd_4fFrNoUhwwWsjmumBu-q8POPg1I9qEJ1MKZ8PGW5cuu7GcrwQh4b3qI0U7zmaZmfY24lPAQjidEaQP9ettmSZl8ui1neJT5xAG4gXin2DsQ-0ic7Twpc-5BhCyVGT-LMemZ6q9mCQNc6hifXeMT9Qj24jox7X8Xa0Z_9SCTrCWenjRfotMQZntlPDZRLULQB&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/smart-spor-hd.png" group-title="Spor Kanalları",SMART SPOR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=249shm9nitwFHNSxRb03iO_8KaoA3duza-cW5l1c1s_sbYNm7JJsMn85FqYVzaZ4R2nB56hEOtnji_jsXyklgEJeLVwdI1rkgrcIzEORR5UMjhg
+https://tr.kpores.ru/live.php?id=d33a56b05fd87704&token=guest__8886pZUnn4poeMkGlBko5EddJLJRPjheuylyuRcaBXOGME0hF2lcXpxbOsONCABYgqrts9Y4_6gDANJ5DxKvfy9nPw0OOQ8q4abEuwJa01--UIY4D6BR-0WawE-RsiKfT7rmuUvqHnDgqhc_loLkeRkEU8z9cf8RJ3jAYyVDN1ns0D_i3k0cSf6rWL20CE7zWlTyn3OWf1_DvuyW79_8U8x6wiE-59IawFnTyC_S7jsVoVGkIlEAllH_MgwTK3MMNWEm&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-hd.png" group-title="Spor Kanalları",Tabii Spor
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=tq9Vh2c1I_ul_iMKWScYZJkERXYjz_0Onnib2q6OWRw3K-9yvYI94foYgWKcZ54Dc6Xs9sZJTbsNh2yjbwlQYPzTpvNOheLGvStEhlL3W-t01V8
+https://tr.kpores.ru/live.php?id=ddd8d25891854deb&token=guest__03aatb0l33rvfIz6XVtQlAK1QEM7a-5tGepbuxTks1Fl39pCG8h8hK3MgY6B0kH0go4T7ig7F6bkJVV39PfsdkVB5Ra92GAQiv6u1ToQRlnsqGJgHaESEyRMIJA7H3lra_zLrUlDHLFxsKsbUGEmZx2JYOjRzv8aG3QIa-tt7ZeWjct0J2YoWdYHANulmbVMOq8QwAPXfsNHq1lYfj70fvXSkt2TXBsDMyzl6sAYpcOgRME__HJMNi_cPr0pxf_NPdaL&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-hd.png" group-title="Spor Kanalları",Tabii Spor 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=fWNYCrero-RRbtwwkE7Ni1kiprngY5oajK8JY9WZ6P7N9S6jIxtsVnILhBTwTf8Tlp8Vq1cISEnT8x8uWDUCK3rMoI9nX4T3DLH1qtPB6QYeEQs
+https://tr.kpores.ru/live.php?id=ac8cb54fa0e0e1a8&token=guest__e5cahEXR6_bzo2rwqfOo6KqMllQ8YZW561NQOBTuDe_EyLoLliHKyAB_2PcSUS5acfJnG34j5IaGUXnaJ9x65gvNNFK_t_0-ufvTbj-07v9Vn6FmW2osunNnP0jFUxIItZyky19iYYkJY3GpTHddSXIsrPL_EH6CgsPBjszS2kvFrmuhvkxfUQFcgzcGuP-CdMFimxH0wFZhDZ6yPg6Yo7p9m2B0UMsQeTTNkd16emcryGbf-8Y9M3KRzX7qFcAMrYeO&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-hd.png" group-title="Spor Kanalları",Tabii Spor 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=OYSatrUB5GBkQonPi1bPbySGoIS2p8KjAZApVBo9UyrHDkcoE8Dp-u6Czdzl6Fp7VUQlUPUiNhJf-ETc47uRAoGmxbyi6d1a2p88MKCz2LlJnKs
+https://tr.kpores.ru/live.php?id=9df43527fbb4b2f6&token=guest__3188Sy9Tx55EeE73ySHDH08yHqWt0if-UTmG6rF_Ax7DC6VXIpZoFc2Uu7avu3_anOkXwOGR_6NUIxKLtC6XEYzaz0LF7uqR1VzV1L0DGhzg_Z9Sb6hlmB0Oc3tJ8JD49ohoav0HGja7GRNYCwOrcvpX6_-gpk60HYw1Sr4KhST9WsXKZOSdTsdEjb2FW0f5JCm4Ftl8ftY5f5eGysyiyMI6oCAqqkhXgD1e4D_ejOwKJ6topbNVm7b8y-UgzQ38PAiY&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-3-56bed38d50.webp" group-title="Spor Kanalları",Tabii Spor 3
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=jtcJGbkxMvQ8oXB80hRIrWNog_y9O3F9f3-1MigFjCf9KthBob1liFUoRQ3LD19or3nHGeW3OPJ0V9dprT5qE4II3BZJwoVn9eG4sC_1UK0xcdI
+https://tr.kpores.ru/live.php?id=669df75ff619bf16&token=guest__0fa9UjGjs_VcsK4b8QULq-ig-THioUxT_25nA-vWUsM1rE05Q0j2d63PZ4p6TainknphrxkApU1Sj8w_WTX_dUbvtQO4B7DlkwcNs1bIc6M5QpKwwCkJF6ZkyVZwWZDNbUoeZn1iilX544sNGcRsqXjaI4hc60fVOeGy9bE3hOEFlLs698FRrHCsXaiHZVANCbrvS7rwGzFuJAKv_Y4jpwP7PrJkEONgtC_aIyZeQgDaxzUcZrfSA6e1Q9nEkcHXtCfY&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-3-56bed38d50.webp" group-title="Spor Kanalları",Tabii Spor 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=lU3Lig8NGkEw6utByEoIkLh66lYfV0L5zjesG6m4a6J1ZA4BAsvsnKFqW0PWQRwMEdB-pZjYc6wDLJj7I1OW3mQZBvAYUFDc-zgJQpI2YABSYHA
+https://tr.kpores.ru/live.php?id=f7f9a3aaa0bd613a&token=guest__1c2cC8Uu0HQ2lvMpFVnk0cmroqfyUgpLPVazg1PLw4aBCKbnu_vNZQuEHHXdydHrULc8m-XjIAgb9FBIOTbJNkmKibP732C8IkvocAMV9c4HHuGrGAQnEgbEA3GyGGwBvKadCTf-TOYRrvlDyF0xM2v14_vzaRBb-7pzULG43VzepspvRQhP_lsIREu55WFF7s61ffJkJQ7KhpDSwltVPCKDdQJuHvCFZ8X5V6u5NajqmpBBbVwt8rRWZSEKjq3pLhIu&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tabii-spor-3-56bed38d50.webp" group-title="Spor Kanalları",Tabii Spor 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=sWZD7fFPqLK7UjN5LkEBrvH8I1C0YXUeyIjNZoO5OYAaD0CGh8DBW-Vk4tjuAbJaFmHXm2wYbznfjmly0utj6kjz8-l85Bp7GBz8P8z_8-AUw8w
+https://tr.kpores.ru/live.php?id=b284efb3786955f1&token=guest__777eXMH4KrO_e1xovXr2zTyIRyjv_cvGqOc-SqpNq156vRNjLAiSGX7FhKXsJQFGir7mq5fCMCzEq702JBK5MXAjDub1Ib2hoGU1W_OMt1kAV-tWk-jKhj_QLH-OI--OiKXYzkfGEJWUlI89K4OM2_Pf-9qrx6WWkXbzL5H9AIrXGCqU0b7q9U83j1ZYrBOsenvzccGhYAzxBRyUXObiejCquXMhFd29b8mCoIR_Jm7G2AZDsMs7HfTbMY4vsqAMcvd2&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tivibu-spor-hd.png" group-title="Spor Kanalları",TİVİBU SPOR
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=XGQzB87FbxrKbBcfuHjnH526fZhSdGROnp6SNAUjRsPQEK48MRYMONbq-U7cCmDY8OjMcjohuUz6ooLxJqYajJAqkfrq9gn0ZO4DT9SgahfV0aE
+https://tr.kpores.ru/live.php?id=7a2c0cfae5829b94&token=guest__9604-HeQKRGCGe4Xdut42X2sJd9AW3vxt1FD7sTHzwtjaz9WAX-VVujv1PDnAO4b5zMGmz8dbxFPdEt4aQiGH8_okFwGb27WvGG1do13K5Akym3qdL6FZs4VFleTXyle99YEVw37pgRYn1bCu_Yh6g551mLjC8zs4u2NZmn394dH6kl1T4cgfCkhniyE_iHm88dfYBvfh1i54thRHWkkmxbe1G4DQpUvc41gF7wsFc_vc7aHXdRcoNTWePDQ0wscdDWu&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tivibu-spor-2-hd.png" group-title="Spor Kanalları",TİVİBU SPOR 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=xGGQXEfwDWJE2AinTSZAI5J2fwcx8gqA4N6NkEg_oMZU3En02ywp-fiXWxorJn-KI-eO88xgKtoey03ZmMUmGkYjFwC0Mf-BG6pKmW6b1eREITs
+https://tr.kpores.ru/live.php?id=f6543bd9a49d2ecc&token=guest__7284AL9XxpWJEItL0-QehfayQ3whD31C02JtU5yoESxgfNS06-sHOUgklVDAe1E-hFDxepNiDtYO9haSMPXs9nt11pUpLL_RNyTiaiinmnUJHkNbxtZk1AnQ11wGBrow3bcUiLi916tmV8VmlxE7AFT97uQRmobnrRmmRLGmj_EUbVkpA_PHrAyK1Pi-2lVG-_sBV9OJIErcq0I9BrMavZh2sNxOpdQcGicGW7YUjsHIJEI6mY8In6SDSH_s4zPV4QZi&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/trt-1-hd.png" group-title="Spor Kanalları",TRT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=1hfySoP1E0uWaDCpPXtnWkN-hgyWv-iw79EzkY54c9rt52FiKcJ7J0ccVd9NhTu2zuQQg-IGi1wxCv7InpBPet_OhDo2LSJx2ukQZ0irZkXwQr8
+https://tr.kpores.ru/live.php?id=8b8081e31099b63d&token=guest__1b56RpPRoQKSo9eTGYCJliqvNUGfMceTV3ugwXR4m4uE7VCSCdWjfIVwm4_5y9agbl29oCDoauLO4dC04Ev_xld37oRQX6dEa2NZVEfBc9jp_lOOc80r71UCXlcCargOIvt30xhkIqDDfNDx-z2K4WEgheJ5WCw-rVCixkP7FW727eWuE3zzHeQJ65h8zva5-dqh3iy0g9pC2xSLjxO4PYEa28OJ_zYkI7ML7dC-LDQk1lpheiYJrMz8GrMZha-htYsC&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/trt-turk-e431934733.webp" group-title="Spor Kanalları",TRT TÜRK
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=wr4Zl1Wm_OKdgwHq41ifOx-N_FKtfZyatxFgMfCOHy08tork3nDlIUazwhju9udLJNrwbP_GCTpstQk7m3TWhJ05tSbo_e15QKgDZWqV8t_7toI
+https://tr.kpores.ru/live.php?id=4e29f93e90a0b3ee&token=guest__3d18YQrF9rsgc_XTB33G31cRL8Uj_BFMmSxIynzu4xNEhwvxu5eo3n1nyRVf-LNNUaPM2XYpKHeVNd3AoRhGQgjyAfS76TC38hYbN0VcvcspeABiyGdHZE3B0dwJUUBUghb0eMpZHBX64BgPYXULSOUKV6-nFFCb1jRecZAcEMqk2OgeNQUbR44ercDogn_RpX0eZ4TJW6bF4oEMOLqNYKAx72dEygmpnkixZ5SOdRhYhZF8hNXEcvx4pAjR8mtUqEpl&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tv-100.png" group-title="Spor Kanalları",TV 100
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=MzSQxr43EqJA_lfbleXoveH68LEINXPZJks412nPbJZ_HIAb88N950W1K_o4mSM3ot-YYzOkANyHgQbS5ftZMhsE8NrhW8Ltz6BPJ3ju_Kewduk
+https://tr.kpores.ru/live.php?id=851ac00df2f95907&token=guest__2530WwamJX-ArUeNgad-Mr9YNBss06jGK-ZbCoh4A6GdGxce02QTvsrZpBM_xzRHt6ygXxdcw-c1IUY7CDnEjBnR4qnsRH4Oegn1N9JreQEK1-seX2UGv6wUrFUSijsIZX5ojjp_Iukvx7z-JgNQ_8yykTWibNrtzF-URa65tHe7EgdgMpPxx-sSVovJQN8FwYzoWTWhdWzz97jTF10vh8VcInexllT4BkZ5oaM-c-qCyPrt5rn5UhsGD4s3SywXLH_L&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tv-85-hd.png" group-title="Spor Kanalları",TV 8,5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=_9CSEOtpKXBMGY-tveNIkdwF-0XTkeyfOLEFG4y_Lw0dZJ-Xp6ALr9xlOxAATYUmIGpKOwNJIoqS-3Hu03mvNyqJTYmpHQ3t1lm_CJneHdfMOpU
+https://tr.kpores.ru/live.php?id=0701caa2f2e031ad&token=guest__bddeT4p-FJ41JHGlyddS_lERRXBz9fneiDdyKzVWDmbjfE4_SOvvPqcoB1_Q6zMnLIY0kKYEyEAy-Waay5qTc97O0_P1Y8yIhrKPqiDcK1tpIdF0EZwY9ulqqpCv8-5qiX7FRRPMq2l11KS7gNQHm5qF4nUm0vwGXdVv0vvzPW2QJk-zOlVS4wsWLJwYCEC7ZIaAKwiGDeVyPJ4iZnuc7Wa6tgKMZkKifQlaYTi_q0Lik-wLfSj0rwlwGLCriw0VD94X&format=.m3u8
+#EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/tv8-hd.png" group-title="Spor Kanalları",TV8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=hH8QhEu9f1luAHzsr6d4Uv2P6eKbp7Tm20e1JYcLSqQMGsF1Qq59A4pJ99rhlsfmyo2U6nbtSnYhzf44RidrFa5kjsWRmyZv1bN_C42FqdzLXcs
+https://tr.kpores.ru/live.php?id=30334f9f1e26d26e&token=guest__5165UyOsPC68Ra4a0OTSQ4gfmUXo5H7283Nm_PdqTNLv-WBmBHaW5d-eZ1Yv5R0Yp-9YN4tQCgCfwQ-hoMKsoVIW4s6Gpce3g3fkb6bhvoi0HZHGu6JejPmMHx815oV0Ddz3lNBdMpHN-KLX3rkc_t1rNMa1XgnTD0_RKvvPipt-FsuF5p4QY2ZkrubhApqiqrJSyZQxQOTbhT1q01P5a-cKAA3PcanpMlslceyIPoc63nokj9YXfHpOARJXDV5jh8v2&format=.m3u8
 #EXTINF:-1 tvg-logo="https://beyazelma78.com/api/media/channels/ufc-0650d6fa1c.svg" group-title="Spor Kanalları",UFC
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=https://beyazelma78.com/api/embed?u=VmgP-sFAFSki2MCvevR1DxaEE26Jw1nF6A7wS3NsWuib7u8aWx_vBHv46P86QK6xALmpLU5TcY38q1JfPoqsG1ZV8-EJWRKhC9Buf2JSkKEkF88
-https://tr.kpores.ru/live.php?id=a3250d81e11d07ab&token=guest__e955o1L-_yvKPrBroRywmMyPcBWlP4270-96F-s8adEKGmCS5OhgjSjIGiWBI9G3Sw4_iXIAPxA17185_9L93Br3pTiS44SjTenxUwV5AiY_jPzq7H9HcSpyIyAyFz2CZF3OFU6EfpTCwP4m05PeFxu0-ZQCBXrlRFoc30h0Z9CuBs_frA3OAmGXhitZPNbJMpJWNwwuugGZC4YlXsclp9iuimbW9grUQULqAouubTdH25lvSBJMkAfKRthnNypkIoNY&format=.m3u8
+https://tr.kpores.ru/live.php?id=a3250d81e11d07ab&token=guest__6f56o1L-_yvKPrBroRywmMyPcBWlP4270-96F-s8adEKGmCS5OhgjSjIGiWBI9G3Sw4_iXIAPxA17185_9L93Br3pTiS44SjTenxUwV5AiY_jPzq7H9HcSpyIyAyFz2CZF3OFU6EfpTCwP4m05PeFxu0-ZQCBXrlRFoc30h0Z9CuBs_frA3OAmGXhitZPNbJMpJWNwwuugGZC4YlXsclp9iuimbW9grUQULqAouubTdH25m-Ri8u7ZtcMbHVbfs0KkGO&format=.m3u8
